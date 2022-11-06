@@ -1,13 +1,5 @@
 class Solution:
-    """This class implements linear queue.
-      Attributes:
-          stack: A list which maintains the content of stack.
-          queue: A list which maintains the content of queue.
-          top: An integer which denotes the index of the element at the top of the stack.
-          front: An integer which denotes the index of the element at the front of the queue.
-          rear: An integer which denotes the index of the element at the rear of the queue.
-          size: An integer which represents the size of stack and queue.
-      """
+
 
     # Write your code here
     def _init_(self, size):
@@ -113,12 +105,7 @@ for index in range(length_of_text):
     solution.enqueue_character(text[index])
 
 is_palindrome = True
-'''
-pop the top character from stack
-dequeue the first character from queue
-compare both characters
-If the comparison fails, set is_palindrome as False.
-'''
+
 for index in range(length_of_text):
     if solution.pop_character() != solution.dequeue_character():
         is_palindrome = False
